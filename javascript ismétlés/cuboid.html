@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tégla test</title>
+    <link rel="stylesheet" href="cuboid.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Téglatest számláló</h1>
+        <form id="cuboidForm">
+            <label for="hossza">Hossza:</label>
+            <input type="number" id="hossza" name="hossza" step="0.1" required>
+            <label for="szelesseg">Szelesseg:</label>
+            <input type="number" id="szelesseg" name="szelesseg" step="0.1" required>
+            <label for="magassag">magassag:</label>
+            <input type="number" id="magassag" name="magassag" step="0.1" required>
+            <button type="submit">Számol</button>
+        </form>
+        <div id="eredmeny">
+            <p>Kerület: <span id="kerulet"></span></p>
+            <p>Terület: <span id="terulet"></span></p>
+        </div>
+    </div>
+    <script src="cuboid.js"></script>
+</body>
+</html>
